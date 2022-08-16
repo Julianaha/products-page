@@ -1,10 +1,8 @@
 import "./style.css";
-import Header from '../../components/Header'
+import Header from "../../components/Header";
 
 function Produto() {
-  return (
-    <Header/>
-  )
+  return <Header />;
 }
 
 export default Produto;

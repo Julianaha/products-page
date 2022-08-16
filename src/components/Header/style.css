@@ -1,7 +1,36 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header p {
+  color: #ffffff;
+  opacity: 1;
+}
+
 .header-title {
-  font-size: 20px;
+  margin-top: 2.3rem;
+  font: normal normal normal 22px Helvetica Neue;
 }
 
 .header-focus {
-  font-size: 40px;
+  font: normal normal bold 40px Helvetica Neue;
+}
+
+.header-p {
+  font: normal normal normal 16px Helvetica Neue;
+  padding: 2rem;
+}
+
+.menu-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 15px;
+  width: 60%;
 }
