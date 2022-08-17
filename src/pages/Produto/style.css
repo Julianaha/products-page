@@ -2,3 +2,32 @@
   width: 90%;
   margin: 0 auto;
 }
+
+.content-flex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 13%;
+  gap: 5%;
+}
+
+.content-left {
+  width: 50%;
+  text-align: justify;
+}
+
+section h2 {
+  text-align: left;
+  font: normal normal normal 22px Helvetica Neue;
+  padding-top: 1rem;
+  color: #888888;
+  opacity: 1;
+}
+
+section p {
+  text-align: left;
+  padding-top: 1.3rem;
+}
+.content-right {
+  width: 50%;
+}

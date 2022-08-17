@@ -2,6 +2,12 @@
   width: 90%;
   margin: 0 auto;
 }
+.background-header{
+  background-image: url(../../assets/img/wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .header-flex {
   display: flex;
   align-items: center;

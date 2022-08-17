@@ -1,9 +1,9 @@
 import "./style.css";
 import { Menu } from "../Menu";
-import { Input } from "../Input";
 
 export function Header() {
   return (
+    <div className="background-header">
     <header className="header-flex container">
       <p className="header-title">uma seleção de produtos</p>
       <p className="header-focus">especial para você</p>
@@ -18,6 +18,8 @@ export function Header() {
         <Menu name="Compartilhe" />
       </div>
     </header>
+
+    </div>
   );
 }
 
