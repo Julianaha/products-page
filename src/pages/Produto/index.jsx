@@ -36,6 +36,9 @@ function Produto() {
             <Formulario />
           </section>
         </div>
+        <fieldset className="section">
+          <legend>Sua seleção especial</legend>
+        </fieldset>
       </main>
     </>
   );
