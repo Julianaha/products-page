@@ -1,6 +1,7 @@
 import "./style.css";
 import Header from "../../components/Header";
 import Formulario from "../../components/Formulario";
+import Card from "../../components/Card";
 
 function Produto() {
   return (
@@ -39,6 +40,9 @@ function Produto() {
         <fieldset className="section">
           <legend>Sua seleção especial</legend>
         </fieldset>
+        <div className="grid-products">
+          <Card />
+        </div>
       </main>
     </>
   );
