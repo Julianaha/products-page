@@ -51,3 +51,15 @@ fieldset legend {
   font: normal normal bold 18px Helvetica Neue;
   color: #888888;
 }
+
+.grid-products{
+  display: flex;
+  flex-wrap: wrap;
+  /* max-width: 800px; */
+  margin: 0 auto;
+}
+
+.grid-products > .card-product{
+  flex: 1 1 200px;
+  margin: 2.5rem;
+}

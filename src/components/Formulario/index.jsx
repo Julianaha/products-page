@@ -15,7 +15,7 @@ function Formulario() {
         <input type="radio" id="woman" name="feminino" value="feminino" />
         <label for="feminino">Feminino</label>
       </div>
-      <button>Enviar</button>
+      <button className="button-form">Enviar</button>
     </form>
   );
 }

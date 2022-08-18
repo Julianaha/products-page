@@ -7,8 +7,8 @@ function Card() {
     fetch(
       "https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1"
     )
-      .then(response => response.json())
-      .then(data => setProducts(data.products))
+      .then((response) => response.json())
+      .then((data) => setProducts(data.products));
   }, []);
 
   return (
@@ -17,11 +17,14 @@ function Card() {
         return (
           <div key={product.id} className="card-product">
             <img src={product.image} className="card-img"></img>
-            <p>{product.name}</p>
+            <p className="card-name">{product.name}</p>
             <p>{product.description}</p>
             <p>De: R${product.oldPrice}</p>
-            <p>Por: R${product.price}</p>
-            <button>Comprar</button>
+            <p className="card-focus">Por: R$ {product.price},00</p>
+            <p>
+              ou {product.installments.count}x de R${product.installments.value}
+            </p>
+            <button className="card-button">Comprar</button>
           </div>
         );
       })}
