@@ -11,11 +11,11 @@ function Formulario() {
       <input className="styleInput" />
       <div className="styleRadio">
         <input type="radio" id="men" name="masculino" value="masculino" />
-        <label for="masculino">Masculino</label>
+        <label htmlFor="masculino">Masculino</label>
         <input type="radio" id="woman" name="feminino" value="feminino" />
-        <label for="feminino">Feminino</label>
+        <label htmlFor="feminino">Feminino</label>
       </div>
-      <button className="button-form">Enviar</button>
+      {/* <button className="button-form">Enviar</button> */}
     </form>
   );
 }
