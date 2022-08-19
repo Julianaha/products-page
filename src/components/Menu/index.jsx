@@ -1,9 +1,9 @@
-import "./style.css";
+import styles from "./Menu.module.css";
 
 export function Menu({ name }) {
   return (
     <>
-      <button>{name}</button>
+      <button className="btnMenu">{name}</button>
     </>
   );
 }
