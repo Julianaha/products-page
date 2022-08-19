@@ -2,10 +2,10 @@
   width: 90%;
   margin: 0 auto;
 }
-.background-header{
+.backgroundHeader {
   background-image: url(../../assets/img/wave.svg);
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   /* width: 100em;
   /* height: 31.25em;
   background: #707070 0% 0% no-repeat padding-box;
@@ -13,10 +13,12 @@
   opacity: 1; */
 }
 
-.header-flex {
+.headerFlex {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
 }
 
 header p {
@@ -24,21 +26,21 @@ header p {
   opacity: 1;
 }
 
-.header-title {
+.headerTitle {
   margin-top: 2.3rem;
   font: normal normal normal 22px Helvetica Neue;
 }
 
-.header-focus {
+.headerFocus {
   font: normal normal bold 40px Helvetica Neue;
 }
 
-.header-p {
+.header_p {
   font: normal normal normal 16px Helvetica Neue;
   padding: 2rem;
 }
 
-.menu-button {
+.menuButton {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
