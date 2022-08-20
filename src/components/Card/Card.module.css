@@ -1,0 +1,33 @@
+.cardImage {
+  max-width: 100%;
+  width: 50%;
+  display: block;
+  object-fit: cover;
+}
+
+.cardProduct > p {
+  /* margin: 1rem;
+    text-align: left; */
+  padding: 0.3rem;
+  font-size: 12px;
+}
+
+.cardProduct {
+  margin: 1rem;
+  text-align: left;
+  width: 20%;
+  padding: 1.5rem;
+}
+.cardName {
+  font: normal normal normal 14px Helvetica Neue;
+}
+
+.cardFocus {
+  font: normal normal bold 16px Helvetica Neue;
+}
+
+.btnCard {
+  background: #ffffff;
+  border: 1px solid #707070;
+  border-radius: 4px;
+}

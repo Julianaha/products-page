@@ -8,8 +8,8 @@ function Produto() {
     <>
       <Header />
       <main className="container">
-        <div className="content-flex">
-          <section className="content-left">
+        <div className="contentFlex">
+          <section className="contentLeft">
             <h2>Ajude o algorítimo a ser mais certeiro</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -33,16 +33,20 @@ function Produto() {
               at mattis augue est vel metus.
             </p>
           </section>
-          <section className="content-right">
+          <section className="contentRight">
             <Formulario />
           </section>
         </div>
         <fieldset className="section">
           <legend>Sua seleção especial</legend>
         </fieldset>
-        <div className="grid-products">
+        <div className="gridProducts">
           <Card />
         </div>
+        <button className="btnProducts">Ainda mais produtos aqui!</button>
+      <fieldset className="section">
+          <legend>Compartilhe a novidade</legend>
+        </fieldset>
       </main>
     </>
   );
