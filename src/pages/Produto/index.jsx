@@ -2,6 +2,7 @@ import "./style.css";
 import Header from "../../components/Header";
 import Formulario from "../../components/Formulario";
 import Card from "../../components/Card";
+import Newsletter from "../../components/Newsletter";
 
 function Produto() {
   return (
@@ -47,6 +48,7 @@ function Produto() {
       <fieldset className="section">
           <legend>Compartilhe a novidade</legend>
         </fieldset>
+        <Newsletter></Newsletter>
       </main>
     </>
   );
