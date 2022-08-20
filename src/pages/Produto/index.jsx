@@ -3,8 +3,29 @@ import Header from "../../components/Header";
 import Formulario from "../../components/Formulario";
 import Card from "../../components/Card";
 import Newsletter from "../../components/Newsletter";
+import { useState, useEffect } from "react";
 
 function Produto() {
+  const [itens, setItens] = useState([]);
+  const [page, setPage] = useState(1);
+
+  function nextPage(){
+    setPage(page + 1)
+    getProductsByPage(page)
+  }
+
+  async function getProductsByPage(page) {
+    const response = await fetch(
+      `https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=${page}`
+    );
+    const data = await response.json();
+    return setItens([].concat(itens, data.products));
+  }
+
+  useEffect(() => {
+    getProductsByPage(page);
+  }, []);
+
   return (
     <>
       <Header />
@@ -42,13 +63,21 @@ function Produto() {
           <legend>Sua seleção especial</legend>
         </fieldset>
         <div className="gridProducts">
-          <Card />
+          <>
+            {itens.map((product, index) => {
+              return (
+                <>
+                  <Card key={index} product={product} />
+                </>
+              );
+            })}
+          </>
         </div>
-        <button className="btnProducts">Ainda mais produtos aqui!</button>
-      <fieldset className="section">
+        <button className="btnProducts" onClick={nextPage}>Ainda mais produtos aqui!</button>
+        <fieldset className="section">
           <legend>Compartilhe a novidade</legend>
         </fieldset>
-        <Newsletter></Newsletter>
+        <Newsletter/>
       </main>
     </>
   );
