@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Card.module.css";
 
-function Card({product}) {
-  if (!product) return (<></>)
+function Card({ product }) {
+  if (!product) return <></>;
 
   return (
     <>
@@ -10,13 +10,15 @@ function Card({product}) {
         <img src={product.image} className={styles.cardImage}></img>
         <p className={styles.cardName}>{product.name}</p>
         <p>{product.description}</p>
-        <p>De: R${product.oldPrice}</p>
-        <p className={styles.cardFocus}>Por: R$ {product.price},00</p>
+        <p>De: R${product.oldPrice.toFixed(2).replace(".", ",")}</p>
+        <p className={styles.cardFocus}>
+          Por: R$ {product.price.toFixed(2).replace(".", ",")}
+        </p>
         <p>
           ou {product.installments.count}x de R$
-          {product.installments.value}
+          {product.installments.value.toFixed(2).replace(".", ",")}
         </p>
-        <button className={styles.btnCard}>Comprar mais</button>
+        <button className={styles.btnCard}>Comprar</button>
       </div>
     </>
   );

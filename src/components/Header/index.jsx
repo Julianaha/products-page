@@ -1,24 +1,23 @@
 import styles from "./Header.module.css";
-import { Menu } from "../Menu";
 
-export function Header() {
+function Header() {
   return (
-    <div className={styles.backgroundHeader}>
-      <header className={styles.headerFlex}>
+    <header>
+      <div className={styles.headerFlex}>
         <p className={styles.headerTitle}>uma seleção de produtos</p>
         <p className={styles.headerFocus}>especial para você</p>
         <p className={styles.header_p}>
           Todos os produtos desta lista foram selecionado a partir da sua
           navegação. Aproveite!
         </p>
-        <div className={styles.menuButton}>
-          <Menu name="Conheça a Linx" />
-          <Menu name="Ajude o algorítimo" />
-          <Menu name="Seus produtos" />
-          <Menu name="Compartilhe" />
-        </div>
-      </header>
-    </div>
+        <nav className={styles.btnNav}>
+          <button className={styles.btn}>Conheça a Linx</button>
+          <button className={styles.btn}>Ajude o algorítimo</button>
+          <button className={styles.btn}>Seus produtos</button>
+          <button className={styles.btn}>Compartilhe</button>
+        </nav>
+      </div>
+    </header>
   );
 }
 

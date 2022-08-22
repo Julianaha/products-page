@@ -1,17 +1,17 @@
-form {
+.formContent {
   display: flex;
   flex-direction: column;
-  flex-flow: column-nowrap;
   padding-top: 1rem;
   gap: 15px;
 }
 
 .styleInput {
-  width: 70%;
+  width: 78%;
   height: 30px;
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
-  opacity: 1;
+  font-size: 16px;
+  color: #707070;
 }
 
 .styleRadio {
@@ -20,9 +20,12 @@ form {
 }
 
 .btnForm {
-  width: 70%;
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #707070 !important;
   border-radius: 4px;
-  opacity: 1;
+  color: #888888;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0.8em;
+  width: 78%;
 }

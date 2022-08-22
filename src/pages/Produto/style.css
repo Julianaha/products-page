@@ -1,40 +1,13 @@
 .container {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.contentFlex {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 13%;
-  gap: 5%;
-}
-
-.contentLeft {
-  width: 50%;
-  text-align: justify;
-}
-
-section h2 {
-  text-align: left;
-  font: normal normal normal 22px Helvetica Neue;
-  padding-top: 1rem;
   color: #888888;
-  opacity: 1;
-}
-
-section p {
-  text-align: left;
-  padding-top: 1.3rem;
-}
-.content-right {
-  width: 50%;
+  font-family: "Helvetica";
+  margin: 0 auto;
+  width: 90%;
 }
 
 .section {
-  text-align: center;
   margin-top: 3.5em;
+  text-align: center;
 }
 
 fieldset {
@@ -47,9 +20,9 @@ fieldset {
 }
 
 fieldset legend {
-  padding: 5px 10px;
-  font: normal normal bold 18px Helvetica Neue;
   color: #888888;
+  font: normal normal bold 18px Helvetica;
+  padding: 5px 10px;
 }
 
 .gridProducts {
@@ -66,13 +39,18 @@ fieldset legend {
 }
 
 .btnProducts {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  color: #888888;
+  cursor: pointer;
   display: flex;
   margin: 0 auto;
   margin-top: 20px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
-  border-radius: 4px;
-  padding: 10px 25px 10px 25px ;
-  cursor: pointer;
-   /* superior | direita | inferior | esquerda */
+  padding: 10px 25px 10px 25px;
+}
+
+footer {
+  background-image: url(../../assets/img/footer.svg);
+  background-repeat: no-repeat;
 }

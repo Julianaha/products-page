@@ -6,8 +6,6 @@
 }
 
 .cardProduct > p {
-  /* margin: 1rem;
-    text-align: left; */
   padding: 0.3rem;
   font-size: 12px;
 }
@@ -19,15 +17,19 @@
   padding: 1.5rem;
 }
 .cardName {
-  font: normal normal normal 14px Helvetica Neue;
+  font-size: 14px !important;
 }
 
 .cardFocus {
-  font: normal normal bold 16px Helvetica Neue;
+  font: normal normal bold 16px Helvetica !important;
 }
 
 .btnCard {
   background: #ffffff;
   border: 1px solid #707070;
   border-radius: 4px;
+  color: #888888;
+  padding: 0.3rem;
+  width: 90%;
+  white-space: nowrap;
 }
